@@ -1,0 +1,11 @@
+requests==2.31.0
+pymongo
+streamlit
+pandas
+requests
+pymongo
+psycopg2-binary
+apache-airflow-providers-postgres
+apache-airflow-providers-sftp
+apache-airflow-providers-ssh
+

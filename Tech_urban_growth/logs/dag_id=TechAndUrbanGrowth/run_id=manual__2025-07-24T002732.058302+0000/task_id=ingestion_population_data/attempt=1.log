@@ -1,0 +1,14 @@
+[2025-07-24T00:27:39.851+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T00:27:32.058302+00:00 [queued]>
+[2025-07-24T00:27:39.928+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T00:27:32.058302+00:00 [queued]>
+[2025-07-24T00:27:39.930+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T00:27:40.068+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingestion_population_data> on 2025-07-24 00:27:32.058302+00:00
+[2025-07-24T00:27:40.375+0000] {standard_task_runner.py:60} INFO - Started process 336 to run task
+[2025-07-24T00:27:40.402+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'ingestion_population_data', 'manual__2025-07-24T00:27:32.058302+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpo5ugbhpz']
+[2025-07-24T00:27:40.412+0000] {standard_task_runner.py:88} INFO - Job 20: Subtask ingestion_population_data
+[2025-07-24T00:27:40.680+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T00:27:32.058302+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T00:27:41.266+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='ingestion_population_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T00:27:32.058302+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T00:27:32.058302+00:00'
+[2025-07-24T00:27:43.196+0000] {logging_mixin.py:188} INFO - ✔ Datos población obtenidos correctamente
+[2025-07-24T00:27:43.268+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-24T00:27:43.469+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=ingestion_population_data, execution_date=20250724T002732, start_date=20250724T002739, end_date=20250724T002743
+[2025-07-24T00:27:43.699+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-24T00:27:44.215+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

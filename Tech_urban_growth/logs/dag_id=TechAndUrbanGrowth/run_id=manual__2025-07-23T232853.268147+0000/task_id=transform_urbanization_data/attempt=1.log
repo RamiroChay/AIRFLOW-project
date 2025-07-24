@@ -1,0 +1,14 @@
+[2025-07-23T23:29:06.484+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.transform_urbanization_data manual__2025-07-23T23:28:53.268147+00:00 [queued]>
+[2025-07-23T23:29:06.526+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.transform_urbanization_data manual__2025-07-23T23:28:53.268147+00:00 [queued]>
+[2025-07-23T23:29:06.528+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-23T23:29:06.576+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_urbanization_data> on 2025-07-23 23:28:53.268147+00:00
+[2025-07-23T23:29:06.599+0000] {standard_task_runner.py:60} INFO - Started process 230 to run task
+[2025-07-23T23:29:06.606+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'transform_urbanization_data', 'manual__2025-07-23T23:28:53.268147+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpo0zgqgg7']
+[2025-07-23T23:29:06.616+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask transform_urbanization_data
+[2025-07-23T23:29:06.788+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.transform_urbanization_data manual__2025-07-23T23:28:53.268147+00:00 [running]> on host 835426bf55cb
+[2025-07-23T23:29:06.997+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='transform_urbanization_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-23T23:28:53.268147+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-23T23:28:53.268147+00:00'
+[2025-07-23T23:29:07.074+0000] {transform_2.py:38} INFO - ✔ 65 registros de urbanización transformados correctamente
+[2025-07-23T23:29:07.075+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-23T23:29:07.144+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=transform_urbanization_data, execution_date=20250723T232853, start_date=20250723T232906, end_date=20250723T232907
+[2025-07-23T23:29:07.229+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-23T23:29:07.309+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

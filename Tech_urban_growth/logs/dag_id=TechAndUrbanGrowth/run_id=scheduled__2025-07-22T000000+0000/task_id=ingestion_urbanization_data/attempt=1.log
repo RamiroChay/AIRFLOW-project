@@ -1,0 +1,14 @@
+[2025-07-23T23:20:22.823+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_urbanization_data scheduled__2025-07-22T00:00:00+00:00 [queued]>
+[2025-07-23T23:20:22.970+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_urbanization_data scheduled__2025-07-22T00:00:00+00:00 [queued]>
+[2025-07-23T23:20:22.976+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-23T23:20:23.136+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingestion_urbanization_data> on 2025-07-22 00:00:00+00:00
+[2025-07-23T23:20:23.225+0000] {standard_task_runner.py:60} INFO - Started process 187 to run task
+[2025-07-23T23:20:23.373+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'ingestion_urbanization_data', 'scheduled__2025-07-22T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpy4qo1ohi']
+[2025-07-23T23:20:23.437+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask ingestion_urbanization_data
+[2025-07-23T23:20:24.087+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.ingestion_urbanization_data scheduled__2025-07-22T00:00:00+00:00 [running]> on host 1222bc5070ab
+[2025-07-23T23:20:24.853+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='ingestion_urbanization_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-22T00:00:00+00:00'
+[2025-07-23T23:20:58.651+0000] {ingestion_2.py:36} ERROR - ❌ Error en urbanización: mongodb:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68816e383b98f88628b4abfa, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-07-23T23:20:58.694+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-23T23:20:58.751+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=ingestion_urbanization_data, execution_date=20250722T000000, start_date=20250723T232022, end_date=20250723T232058
+[2025-07-23T23:20:58.877+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-23T23:20:59.039+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

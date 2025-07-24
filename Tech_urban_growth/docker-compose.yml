@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: airflow_postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my_network
+
+  init:
+    build: .
+    container_name: airflow_init
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      PYTHONPATH: /opt/airflow
+      MONGO_URI: mongodb://mongo:27017/
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./utils:/opt/airflow/utils
+      - ./logs:/opt/airflow/logs
+    command: db init
+    networks:
+      - my_network
+
+  webserver:
+    build: .
+    container_name: airflow_webserver
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      PYTHONPATH: /opt/airflow
+      MONGO_URI: mongodb://mongo:27017/
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./utils:/opt/airflow/utils
+      - ./logs:/opt/airflow/logs
+    ports:
+      - "8080:8080"
+    command: webserver
+    networks:
+      - my_network
+
+  scheduler:
+    build: .
+    container_name: airflow_scheduler
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      PYTHONPATH: /opt/airflow
+      MONGO_URI: mongodb://mongo:27017/
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./utils:/opt/airflow/utils
+      - ./logs:/opt/airflow/logs
+    command: scheduler
+    networks:
+      - my_network
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    networks:
+      - my_network
+
+  streamlit:
+    build:
+      context: ./streamlit_app
+      dockerfile: Dockerfile
+    container_name: streamlit_app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - mongodb
+    networks:
+      - my_network
+
+networks:
+  my_network:
+
+volumes:
+  postgres_data:
+  logs:
