@@ -1,0 +1,88 @@
+[2025-07-24T02:25:19.574+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T02:25:12.724720+00:00 [queued]>
+[2025-07-24T02:25:19.609+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T02:25:12.724720+00:00 [queued]>
+[2025-07-24T02:25:19.613+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T02:25:19.705+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingestion_population_data> on 2025-07-24 02:25:12.724720+00:00
+[2025-07-24T02:25:19.732+0000] {standard_task_runner.py:60} INFO - Started process 1628 to run task
+[2025-07-24T02:25:19.749+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'ingestion_population_data', 'manual__2025-07-24T02:25:12.724720+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpidsovh_k']
+[2025-07-24T02:25:19.757+0000] {standard_task_runner.py:88} INFO - Job 76: Subtask ingestion_population_data
+[2025-07-24T02:25:19.956+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T02:25:12.724720+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T02:25:20.230+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='ingestion_population_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T02:25:12.724720+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T02:25:12.724720+00:00'
+[2025-07-24T02:25:22.438+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para A, registros: 0
+[2025-07-24T02:25:22.972+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para R, registros: 0
+[2025-07-24T02:25:23.503+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para G, registros: 0
+[2025-07-24T02:25:24.167+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:24.675+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para A, registros: 0
+[2025-07-24T02:25:25.099+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para T, registros: 0
+[2025-07-24T02:25:25.415+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para G, registros: 0
+[2025-07-24T02:25:25.751+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:26.162+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:25:26.600+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para H, registros: 0
+[2025-07-24T02:25:27.002+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para S, registros: 0
+[2025-07-24T02:25:27.292+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:27.612+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:25:27.973+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para R, registros: 0
+[2025-07-24T02:25:28.307+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:25:28.895+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:29.257+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:25:29.638+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para L, registros: 0
+[2025-07-24T02:25:30.087+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para Z, registros: 0
+[2025-07-24T02:25:30.413+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:31.199+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:25:31.618+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para O, registros: 0
+[2025-07-24T02:25:32.287+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para L, registros: 0
+[2025-07-24T02:25:32.650+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:33.052+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:25:33.494+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para R, registros: 0
+[2025-07-24T02:25:33.974+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para A, registros: 0
+[2025-07-24T02:25:34.450+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:34.991+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para C, registros: 0
+[2025-07-24T02:25:35.326+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para A, registros: 0
+[2025-07-24T02:25:35.883+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para N, registros: 0
+[2025-07-24T02:25:36.219+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:36.548+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para C, registros: 0
+[2025-07-24T02:25:36.894+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para H, registros: 0
+[2025-07-24T02:25:37.198+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para L, registros: 0
+[2025-07-24T02:25:58.556+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:25:58.850+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para C, registros: 0
+[2025-07-24T02:26:20.276+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para O, registros: 0
+[2025-07-24T02:26:41.667+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para L, registros: 0
+[2025-07-24T02:26:42.044+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:26:42.370+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para C, registros: 0
+[2025-07-24T02:27:03.692+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para R, registros: 0
+[2025-07-24T02:27:04.173+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para I, registros: 0
+[2025-07-24T02:27:04.537+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:27:25.915+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para C, registros: 0
+[2025-07-24T02:27:26.296+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para U, registros: 0
+[2025-07-24T02:27:26.708+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para B, registros: 0
+[2025-07-24T02:27:48.048+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:28:09.565+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para D, registros: 0
+[2025-07-24T02:28:10.047+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para M, registros: 0
+[2025-07-24T02:28:31.429+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para A, registros: 0
+[2025-07-24T02:28:52.806+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:28:53.269+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para D, registros: 0
+[2025-07-24T02:28:53.585+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para O, registros: 0
+[2025-07-24T02:28:54.249+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para M, registros: 0
+[2025-07-24T02:29:15.940+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:29:16.388+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para E, registros: 0
+[2025-07-24T02:29:37.806+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para C, registros: 0
+[2025-07-24T02:29:38.146+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para U, registros: 0
+[2025-07-24T02:29:38.472+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:29:38.767+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para S, registros: 0
+[2025-07-24T02:29:39.073+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para L, registros: 0
+[2025-07-24T02:29:39.460+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para V, registros: 0
+[2025-07-24T02:30:00.883+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:30:23.050+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para G, registros: 0
+[2025-07-24T02:30:23.348+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-07-24T02:30:23.485+0000] {process_utils.py:131} INFO - Sending 15 to group 1628. PIDs of all processes in the group: [1628]
+[2025-07-24T02:30:23.492+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1628
+[2025-07-24T02:30:23.514+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-24T02:30:23.537+0000] {ingestion_3.py:37} ERROR - ❌ Error al obtener datos población para R: Task received SIGTERM signal
+[2025-07-24T02:30:44.941+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para D, registros: 0
+[2025-07-24T02:30:45.244+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ;, registros: 0
+[2025-07-24T02:30:45.559+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para G, registros: 0
+[2025-07-24T02:31:06.912+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para T, registros: 0
+[2025-07-24T02:31:07.242+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para M, registros: 0
+[2025-07-24T02:31:23.489+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=1628, name='airflow task ru', status='sleeping', started='02:25:19') did not respond to SIGTERM. Trying SIGKILL
+[2025-07-24T02:31:23.600+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 1628
+[2025-07-24T02:31:23.701+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1628, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='02:25:19') (1628) terminated with exit code -9
+[2025-07-24T02:31:23.712+0000] {standard_task_runner.py:175} ERROR - Job 76 was killed before it finished (likely due to running out of memory)

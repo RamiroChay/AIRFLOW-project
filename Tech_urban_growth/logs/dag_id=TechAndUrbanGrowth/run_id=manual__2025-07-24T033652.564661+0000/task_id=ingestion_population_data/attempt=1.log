@@ -1,0 +1,49 @@
+[2025-07-24T03:36:59.747+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T03:36:52.564661+00:00 [queued]>
+[2025-07-24T03:36:59.808+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T03:36:52.564661+00:00 [queued]>
+[2025-07-24T03:36:59.809+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T03:36:59.865+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingestion_population_data> on 2025-07-24 03:36:52.564661+00:00
+[2025-07-24T03:36:59.904+0000] {standard_task_runner.py:60} INFO - Started process 2607 to run task
+[2025-07-24T03:36:59.973+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'ingestion_population_data', 'manual__2025-07-24T03:36:52.564661+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmp2b5wc7j1']
+[2025-07-24T03:37:00.091+0000] {standard_task_runner.py:88} INFO - Job 151: Subtask ingestion_population_data
+[2025-07-24T03:37:00.517+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.ingestion_population_data manual__2025-07-24T03:36:52.564661+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T03:37:01.040+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='ingestion_population_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T03:36:52.564661+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T03:36:52.564661+00:00'
+[2025-07-24T03:37:02.503+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ARG, registros: 65
+[2025-07-24T03:37:02.894+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ATG, registros: 65
+[2025-07-24T03:37:03.229+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para BHS, registros: 65
+[2025-07-24T03:37:03.551+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para BRB, registros: 65
+[2025-07-24T03:37:04.094+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para BLZ, registros: 65
+[2025-07-24T03:37:04.419+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para BOL, registros: 65
+[2025-07-24T03:37:04.740+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para BRA, registros: 65
+[2025-07-24T03:37:05.066+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para CAN, registros: 65
+[2025-07-24T03:37:05.688+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para CHL, registros: 65
+[2025-07-24T03:37:06.055+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para COL, registros: 65
+[2025-07-24T03:37:06.387+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para CRI, registros: 65
+[2025-07-24T03:37:06.735+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para CUB, registros: 65
+[2025-07-24T03:37:07.317+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para DMA, registros: 65
+[2025-07-24T03:37:07.656+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para DOM, registros: 65
+[2025-07-24T03:37:08.003+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para ECU, registros: 65
+[2025-07-24T03:37:08.400+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para SLV, registros: 65
+[2025-07-24T03:37:08.827+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para GRD, registros: 65
+[2025-07-24T03:37:09.164+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para GTM, registros: 65
+[2025-07-24T03:37:09.474+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para GUY, registros: 65
+[2025-07-24T03:37:09.855+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para HTI, registros: 65
+[2025-07-24T03:37:10.203+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para HND, registros: 65
+[2025-07-24T03:37:10.555+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para JAM, registros: 65
+[2025-07-24T03:37:10.984+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para MEX, registros: 65
+[2025-07-24T03:37:11.409+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para NIC, registros: 65
+[2025-07-24T03:37:11.826+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para PAN, registros: 65
+[2025-07-24T03:37:12.231+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para PRY, registros: 65
+[2025-07-24T03:37:12.839+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para PER, registros: 65
+[2025-07-24T03:37:13.127+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para KNA, registros: 65
+[2025-07-24T03:37:13.498+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para LCA, registros: 65
+[2025-07-24T03:37:13.854+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para VCT, registros: 65
+[2025-07-24T03:37:14.417+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para SUR, registros: 65
+[2025-07-24T03:37:14.862+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para TTO, registros: 65
+[2025-07-24T03:37:15.241+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para URY, registros: 65
+[2025-07-24T03:37:15.533+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para USA, registros: 65
+[2025-07-24T03:37:15.829+0000] {ingestion_3.py:34} INFO - ✔ Datos población obtenidos para VEN, registros: 65
+[2025-07-24T03:37:15.964+0000] {ingestion_3.py:41} INFO - ✔ Total registros población obtenidos: 2275
+[2025-07-24T03:37:15.974+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-24T03:37:16.004+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=ingestion_population_data, execution_date=20250724T033652, start_date=20250724T033659, end_date=20250724T033716
+[2025-07-24T03:37:16.091+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-24T03:37:16.178+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

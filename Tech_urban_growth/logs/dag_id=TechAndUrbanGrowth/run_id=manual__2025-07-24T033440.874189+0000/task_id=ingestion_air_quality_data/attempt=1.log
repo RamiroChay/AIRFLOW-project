@@ -1,0 +1,48 @@
+[2025-07-24T03:34:47.311+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_air_quality_data manual__2025-07-24T03:34:40.874189+00:00 [queued]>
+[2025-07-24T03:34:47.335+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_air_quality_data manual__2025-07-24T03:34:40.874189+00:00 [queued]>
+[2025-07-24T03:34:47.336+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T03:34:47.402+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingestion_air_quality_data> on 2025-07-24 03:34:40.874189+00:00
+[2025-07-24T03:34:47.427+0000] {standard_task_runner.py:60} INFO - Started process 2555 to run task
+[2025-07-24T03:34:47.441+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'ingestion_air_quality_data', 'manual__2025-07-24T03:34:40.874189+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmp8ydxu60o']
+[2025-07-24T03:34:47.449+0000] {standard_task_runner.py:88} INFO - Job 141: Subtask ingestion_air_quality_data
+[2025-07-24T03:34:47.633+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.ingestion_air_quality_data manual__2025-07-24T03:34:40.874189+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T03:34:47.943+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='ingestion_air_quality_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T03:34:40.874189+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T03:34:40.874189+00:00'
+[2025-07-24T03:34:48.750+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Buenos Aires, ARG
+[2025-07-24T03:34:49.045+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para St. John's, ATG
+[2025-07-24T03:34:49.329+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Nassau, BHS
+[2025-07-24T03:34:49.605+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Bridgetown, BRB
+[2025-07-24T03:34:49.934+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Belmopan, BLZ
+[2025-07-24T03:34:50.247+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Sucre, BOL
+[2025-07-24T03:34:50.548+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Brasilia, BRA
+[2025-07-24T03:34:50.792+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Ottawa, CAN
+[2025-07-24T03:34:51.050+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Santiago, CHL
+[2025-07-24T03:34:51.305+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Bogotá, COL
+[2025-07-24T03:34:51.587+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para San José, CRI
+[2025-07-24T03:34:51.862+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Havana, CUB
+[2025-07-24T03:34:52.142+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Roseau, DMA
+[2025-07-24T03:34:52.419+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Santo Domingo, DOM
+[2025-07-24T03:34:52.690+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Quito, ECU
+[2025-07-24T03:34:52.960+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para San Salvador, SLV
+[2025-07-24T03:34:53.231+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para St. George's, GRD
+[2025-07-24T03:34:53.505+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Guatemala City, GTM
+[2025-07-24T03:34:53.770+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Georgetown, GUY
+[2025-07-24T03:34:54.043+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Port-au-Prince, HTI
+[2025-07-24T03:34:54.321+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Tegucigalpa, HND
+[2025-07-24T03:34:54.564+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Kingston, JAM
+[2025-07-24T03:34:54.807+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Ciudad de México, MEX
+[2025-07-24T03:34:55.073+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Managua, NIC
+[2025-07-24T03:34:55.347+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Panama City, PAN
+[2025-07-24T03:34:55.615+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Asunción, PRY
+[2025-07-24T03:34:55.897+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Lima, PER
+[2025-07-24T03:34:56.172+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Basseterre, KNA
+[2025-07-24T03:34:56.433+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Castries, LCA
+[2025-07-24T03:34:56.706+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Kingstown, VCT
+[2025-07-24T03:34:56.972+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Paramaribo, SUR
+[2025-07-24T03:34:57.246+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Port of Spain, TTO
+[2025-07-24T03:34:57.510+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Montevideo, URY
+[2025-07-24T03:34:57.748+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Washington, USA
+[2025-07-24T03:34:58.024+0000] {ingestion_1.py:43} INFO - ✔ Datos de calidad del aire obtenidos para Caracas, VEN
+[2025-07-24T03:34:58.093+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-24T03:34:58.126+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=ingestion_air_quality_data, execution_date=20250724T033440, start_date=20250724T033447, end_date=20250724T033458
+[2025-07-24T03:34:58.278+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-24T03:34:58.327+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

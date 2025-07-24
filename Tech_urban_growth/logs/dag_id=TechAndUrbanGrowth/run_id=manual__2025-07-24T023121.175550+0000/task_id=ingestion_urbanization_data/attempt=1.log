@@ -1,0 +1,49 @@
+[2025-07-24T02:31:32.318+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_urbanization_data manual__2025-07-24T02:31:21.175550+00:00 [queued]>
+[2025-07-24T02:31:32.372+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.ingestion_urbanization_data manual__2025-07-24T02:31:21.175550+00:00 [queued]>
+[2025-07-24T02:31:32.377+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T02:31:32.445+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingestion_urbanization_data> on 2025-07-24 02:31:21.175550+00:00
+[2025-07-24T02:31:32.476+0000] {standard_task_runner.py:60} INFO - Started process 1721 to run task
+[2025-07-24T02:31:32.501+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'ingestion_urbanization_data', 'manual__2025-07-24T02:31:21.175550+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmps3dejxug']
+[2025-07-24T02:31:32.513+0000] {standard_task_runner.py:88} INFO - Job 82: Subtask ingestion_urbanization_data
+[2025-07-24T02:31:33.201+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.ingestion_urbanization_data manual__2025-07-24T02:31:21.175550+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T02:31:34.289+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='ingestion_urbanization_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T02:31:21.175550+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T02:31:21.175550+00:00'
+[2025-07-24T02:31:56.073+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para ARG, registros: 65
+[2025-07-24T02:32:17.509+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para ATG, registros: 65
+[2025-07-24T02:32:17.887+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para BHS, registros: 65
+[2025-07-24T02:32:18.219+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para BRB, registros: 65
+[2025-07-24T02:32:39.627+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para BLZ, registros: 65
+[2025-07-24T02:33:00.970+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para BOL, registros: 65
+[2025-07-24T02:33:22.419+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para BRA, registros: 65
+[2025-07-24T02:33:23.045+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para CAN, registros: 65
+[2025-07-24T02:33:23.383+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para CHL, registros: 65
+[2025-07-24T02:33:23.702+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para COL, registros: 65
+[2025-07-24T02:33:45.036+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para CRI, registros: 65
+[2025-07-24T02:34:06.504+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para CUB, registros: 65
+[2025-07-24T02:34:06.819+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para DMA, registros: 65
+[2025-07-24T02:34:07.149+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para DOM, registros: 65
+[2025-07-24T02:34:07.472+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para ECU, registros: 65
+[2025-07-24T02:34:28.947+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para SLV, registros: 65
+[2025-07-24T02:34:29.496+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para GRD, registros: 65
+[2025-07-24T02:34:30.062+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para GTM, registros: 65
+[2025-07-24T02:34:30.436+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para GUY, registros: 65
+[2025-07-24T02:34:30.753+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para HTI, registros: 65
+[2025-07-24T02:34:31.036+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para HND, registros: 65
+[2025-07-24T02:34:31.321+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para JAM, registros: 65
+[2025-07-24T02:34:31.620+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para MEX, registros: 65
+[2025-07-24T02:34:31.967+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para NIC, registros: 65
+[2025-07-24T02:34:32.297+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para PAN, registros: 65
+[2025-07-24T02:34:32.580+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para PRY, registros: 65
+[2025-07-24T02:34:32.928+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para PER, registros: 65
+[2025-07-24T02:34:33.221+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para KNA, registros: 65
+[2025-07-24T02:34:33.592+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para LCA, registros: 65
+[2025-07-24T02:34:34.069+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para VCT, registros: 65
+[2025-07-24T02:34:34.424+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para SUR, registros: 65
+[2025-07-24T02:34:34.877+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para TTO, registros: 65
+[2025-07-24T02:34:35.318+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para URY, registros: 65
+[2025-07-24T02:34:35.788+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para USA, registros: 65
+[2025-07-24T02:34:36.241+0000] {ingestion_2.py:35} INFO - ✔ Datos urbanización obtenidos para VEN, registros: 65
+[2025-07-24T02:34:36.833+0000] {ingestion_2.py:42} INFO - ✔ Total registros urbanización obtenidos: 2275
+[2025-07-24T02:34:36.854+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-24T02:34:37.000+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=ingestion_urbanization_data, execution_date=20250724T023121, start_date=20250724T023132, end_date=20250724T023436
+[2025-07-24T02:34:37.235+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-24T02:34:37.979+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

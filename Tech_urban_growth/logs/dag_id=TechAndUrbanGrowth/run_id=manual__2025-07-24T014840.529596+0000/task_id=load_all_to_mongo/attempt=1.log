@@ -1,0 +1,20 @@
+[2025-07-24T01:49:30.553+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.load_all_to_mongo manual__2025-07-24T01:48:40.529596+00:00 [queued]>
+[2025-07-24T01:49:30.579+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.load_all_to_mongo manual__2025-07-24T01:48:40.529596+00:00 [queued]>
+[2025-07-24T01:49:30.580+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T01:49:30.613+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load_all_to_mongo> on 2025-07-24 01:48:40.529596+00:00
+[2025-07-24T01:49:30.636+0000] {standard_task_runner.py:60} INFO - Started process 1201 to run task
+[2025-07-24T01:49:30.648+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'load_all_to_mongo', 'manual__2025-07-24T01:48:40.529596+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpjksvbtkg']
+[2025-07-24T01:49:30.660+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask load_all_to_mongo
+[2025-07-24T01:49:30.838+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.load_all_to_mongo manual__2025-07-24T01:48:40.529596+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T01:49:31.082+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='load_all_to_mongo' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T01:48:40.529596+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T01:48:40.529596+00:00'
+[2025-07-24T01:49:31.087+0000] {load_mongo.py:13} INFO - 📦 Conectando a MongoDB...
+[2025-07-24T01:49:31.303+0000] {load_mongo.py:21} INFO - Datos urbanización recibidos: tipo=<class 'list'>, cantidad=65
+[2025-07-24T01:49:31.304+0000] {load_mongo.py:22} INFO - Datos calidad aire recibidos: tipo=<class 'list'>, cantidad=35
+[2025-07-24T01:49:31.306+0000] {load_mongo.py:23} INFO - Datos población recibidos: tipo=<class 'list'>, cantidad=65
+[2025-07-24T01:49:31.729+0000] {load_mongo.py:67} INFO - 💨 Calidad del aire: 35 registros upsertados
+[2025-07-24T01:49:31.935+0000] {load_mongo.py:101} INFO - 📝 Resumen consolidado insertado: {'timestamp': '2025-07-24T01:49:31.929746', 'sources': ['population', 'urbanization', 'air_quality'], 'summary': {'population': 65, 'urbanization': 65, 'air_quality': 35, 'total_upserted': 165}, '_id': ObjectId('6881912bbdda973c172b8a44')}
+[2025-07-24T01:49:32.028+0000] {load_mongo.py:106} INFO - ✅ Carga finalizada con éxito: 165 registros upsertados
+[2025-07-24T01:49:32.030+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-24T01:49:32.063+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=load_all_to_mongo, execution_date=20250724T014840, start_date=20250724T014930, end_date=20250724T014932
+[2025-07-24T01:49:32.158+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-24T01:49:32.210+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

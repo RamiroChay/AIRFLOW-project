@@ -26,7 +26,7 @@ def transform_urbanization_data(ti):
         cleaned_entry = {
             "country": country,
             "country_code": country_code,
-            "year": int(year),
+            "date": int(year),
             "urban_population_percent": urban_percent,
             "quality": quality,
             "transformed_at": datetime.utcnow().isoformat()
@@ -36,3 +36,4 @@ def transform_urbanization_data(ti):
 
     ti.xcom_push(key="urbanization_clean_data", value=cleaned_data)
     logging.info(f"✔ {len(cleaned_data)} registros de urbanización transformados correctamente")
+    

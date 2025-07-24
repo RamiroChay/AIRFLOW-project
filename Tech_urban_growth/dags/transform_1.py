@@ -39,6 +39,7 @@ def transform_air_quality_data(ti):
 
             transformed = {
                 "timestamp": datetime.utcnow().isoformat(),
+                "date": datetime.utcnow().year,
                 "extracted_at": raw.get("extracted_at"),
                 "location": raw.get("location", {}),
                 "aqi": aqi,

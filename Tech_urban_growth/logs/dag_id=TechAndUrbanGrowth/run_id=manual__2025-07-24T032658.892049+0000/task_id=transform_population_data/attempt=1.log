@@ -1,0 +1,35 @@
+[2025-07-24T03:27:19.624+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.transform_population_data manual__2025-07-24T03:26:58.892049+00:00 [queued]>
+[2025-07-24T03:27:19.641+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TechAndUrbanGrowth.transform_population_data manual__2025-07-24T03:26:58.892049+00:00 [queued]>
+[2025-07-24T03:27:19.642+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-24T03:27:19.663+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_population_data> on 2025-07-24 03:26:58.892049+00:00
+[2025-07-24T03:27:19.677+0000] {standard_task_runner.py:60} INFO - Started process 2407 to run task
+[2025-07-24T03:27:19.682+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TechAndUrbanGrowth', 'transform_population_data', 'manual__2025-07-24T03:26:58.892049+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpopior0g1']
+[2025-07-24T03:27:19.686+0000] {standard_task_runner.py:88} INFO - Job 122: Subtask transform_population_data
+[2025-07-24T03:27:19.804+0000] {task_command.py:423} INFO - Running <TaskInstance: TechAndUrbanGrowth.transform_population_data manual__2025-07-24T03:26:58.892049+00:00 [running]> on host 4c8899e5e1ad
+[2025-07-24T03:27:20.036+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TechAndUrbanGrowth' AIRFLOW_CTX_TASK_ID='transform_population_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T03:26:58.892049+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T03:26:58.892049+00:00'
+[2025-07-24T03:27:20.127+0000] {transform_3.py:13} INFO - DEBUG: raw_data tipo=<class 'list'> cantidad=2275
+[2025-07-24T03:27:20.128+0000] {transform_3.py:19} INFO - DEBUG entrada[0]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2024', 'value': 45696159, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.129+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.130+0000] {transform_3.py:19} INFO - DEBUG entrada[1]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2023', 'value': 45538401, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.131+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.132+0000] {transform_3.py:19} INFO - DEBUG entrada[2]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2022', 'value': 45407904, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.133+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.135+0000] {transform_3.py:19} INFO - DEBUG entrada[3]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2021', 'value': 45312281, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.136+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.137+0000] {transform_3.py:19} INFO - DEBUG entrada[4]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2020', 'value': 45191965, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.139+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.140+0000] {transform_3.py:19} INFO - DEBUG entrada[5]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2019', 'value': 44973465, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.146+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.153+0000] {transform_3.py:19} INFO - DEBUG entrada[6]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2018', 'value': 44654882, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.156+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.157+0000] {transform_3.py:19} INFO - DEBUG entrada[7]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2017', 'value': 44288894, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.160+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.161+0000] {transform_3.py:19} INFO - DEBUG entrada[8]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2016', 'value': 43900313, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.162+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.163+0000] {transform_3.py:19} INFO - DEBUG entrada[9]: {'indicator': {'id': 'SP.POP.TOTL', 'value': 'Population, total'}, 'country': {'id': 'AR', 'value': 'Argentina'}, 'countryiso3code': 'ARG', 'date': '2015', 'value': 43477012, 'unit': '', 'obs_status': '', 'decimal': 0, 'country_code': 'ARG'}
+[2025-07-24T03:27:20.164+0000] {transform_3.py:27} INFO -   -> país AR no permitido
+[2025-07-24T03:27:20.165+0000] {transform_3.py:42} INFO - ✔ 0 registros de población transformados correctamente
+[2025-07-24T03:27:20.198+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-24T03:27:20.218+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TechAndUrbanGrowth, task_id=transform_population_data, execution_date=20250724T032658, start_date=20250724T032719, end_date=20250724T032720
+[2025-07-24T03:27:20.298+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-24T03:27:20.366+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
